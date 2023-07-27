@@ -19,14 +19,20 @@
         extend: {
           colors: {
             clifford: '#da373d',
-          }
+            'color-primary': '#F85559',
+          },
+          backgroundImage: {
+            'banner-one': "url('./images/banner1.png')",
+          },
         }
       }
     }
   </script>
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/eccbe294aa.js" crossorigin="anonymous"></script>
 
 
-  <!-- Styles -->
+  <!-- Custom Styles -->
   <style>
     .font-lato {
       font-family: 'Lato', sans-serif;
@@ -37,7 +43,78 @@
 
 <body class="font-lato">
   <header>
+    <!-- nav bar -->
+    <nav class="max-w-screen-2xl px-2 py-2 lg:px-12 lg:py-10 mx-auto">
+      <div class="navbar lg:bg-color-primary rounded-full">
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu text-white text-lg menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="flex-1 justify-between">
+          <div class="flex items-center">
+            <img src="./images/logo.png" alt="">
+            <a class="btn btn-ghost normal-case text-lg lg:text-4xl font-bold lg:text-white">Fruit
+              Burst</a>
+          </div>
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <input type="text" placeholder="Search"
+            class="input input-bordered w-24 mr-4 md:w-auto rounded-full text-right" />
+        </div>
+      </div>
+    </nav>
+    <!-- BAnner/Carousel Section -->
+    <Section class="max-w-screen-2xl px-2 py-2 lg:px-12 lg:py-10 mx-auto">
+      <div class="carousel w-full bg-">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
 
+    </Section>
   </header>
   <main>
 
