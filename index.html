@@ -20,12 +20,14 @@
           colors: {
             clifford: '#da373d',
             'color-primary': '#F85559',
+            'footer-bg': '#121212',
           },
           backgroundImage: {
             'banner-one': "url('./images/banner1.png')",
             'banner-two': "url('./images/banner2.png')",
             'banner-three': "url('./images/banner3.png')",
             'banner-four': "url('./images/banner4.png')",
+            'team-bg': "url('./images/team.png')",
           },
         }
       }
@@ -44,7 +46,7 @@
 
 </head>
 
-<body class="font-lato">
+<body class="font-lato mx-auto">
   <header>
     <!-- nav bar -->
     <nav class="max-w-screen-2xl px-2 py-2 lg:px-12 lg:py-10 mx-auto">
@@ -84,7 +86,7 @@
         </div>
       </div>
     </nav>
-    <!-- BAnner/Carousel Section -->
+    <!-- Banner/Carousel Section -->
     <Section class="max-w-screen-2xl mx-auto px-2 py-2 lg:px-12 lg:py-10">
       <div class="carousel w-full">
         <!-- Slider-1 -->
@@ -156,9 +158,10 @@
     <!-- deal of the day -->
     <section class="max-w-screen-2xl px-2 py-2 lg:px-12 lg:py-10 mx-auto">
       <div class="flex flex-col lg:flex-row justify-between">
-        <div>
+        <div class="mb-5 md:mb-0">
           <h3 class="text-5xl font-extrabold mb-6">Deal of the day</h3>
-          <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+          <p class="lg:pr-80">Contrary to popular belief, is not simply random text. It has roots in a piece of
+            classical Latin
             literature from 45 BC,
             making it over 2000 years old.</p>
         </div>
@@ -359,9 +362,80 @@
       </div>
       </div>
     </section>
+    <!-- Meet the Team Section -->
+    <section class="max-w-screen-2xl px-2 py-2 lg:px-12 lg:py-10 mx-auto rounded-lg">
+      <div
+        class="flex flex-col bg-team-bg bg-cover w-full text-center items-center py-7 space-y-4 lg:pt-20 lg:space-y-7 lg:h-[690px]">
+        <h2 class="text-2xl lg:text-5xl font-extrabold text-white text-center">Meet the team section</h2>
+        <p class="text-white text-center p-4 ">Contrary to popular belief, is not simply random text. It has roots in a
+          piece
+          of classical <br> Latin literature from 45 BC,
+          making it over 2000 years old.</p>
 
+        <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-20">
+          <!-- Member-1 -->
+          <div class="space-y-2">
+            <img src="./images/member1.png" alt="">
+            <h3 class="text-white text-2xl font-bold">Awlad Hossain</h3>
+            <p class="text-white">Fruits Expert</p>
+            <div>
+              <a href=""><i class="fa-brands fa-facebook-f bg-color-primary rounded-full px-2.5 py-2"></i></a>
+              <a href=""><i class="fa-brands fa-twitter bg-color-primary rounded-full p-2"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in bg-color-primary rounded-full p-2"></i></a>
+            </div>
+          </div>
+          <!-- Member-2 -->
+          <div class="space-y-2">
+            <img src="./images/member2.png" alt="">
+            <h3 class="text-white text-2xl font-bold">Awlad Hossain</h3>
+            <p class="text-white">Fruits Expert</p>
+            <div>
+              <a href=""><i class="fa-brands fa-facebook-f bg-color-primary rounded-full px-2.5 py-2"></i></a>
+              <a href=""><i class="fa-brands fa-twitter bg-color-primary rounded-full p-2"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in bg-color-primary rounded-full p-2"></i></a>
+            </div>
+          </div>
+          <!-- Member-3 -->
+          <div class="space-y-2">
+            <img src="./images/member3.png" alt="">
+            <h3 class="text-white text-2xl font-bold">Awlad Hossain</h3>
+            <p class="text-white">Fruits Expert</p>
+            <div>
+              <a href=""><i class="fa-brands fa-facebook-f bg-color-primary rounded-full px-2.5 py-2"></i></a>
+              <a href=""><i class="fa-brands fa-twitter bg-color-primary rounded-full p-2"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in bg-color-primary rounded-full p-2"></i></a>
+            </div>
+          </div>
+          <!-- Member-4 -->
+          <div class="space-y-2">
+            <img src="./images/member4.png" alt="">
+            <h3 class="text-white text-2xl font-bold">Awlad Hossain</h3>
+            <p class="text-white">Fruits Expert</p>
+            <div>
+              <a href=""><i class="fa-brands fa-facebook-f bg-color-primary rounded-full px-2.5 py-2"></i></a>
+              <a href=""><i class="fa-brands fa-twitter bg-color-primary rounded-full p-2"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in bg-color-primary rounded-full p-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
+
+
+  <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded bg-footer-bg">
+    <div class="flex items-center">
+      <img src="./images/logo.png" alt="">
+      <a class="btn btn-ghost normal-case text-lg lg:text-2xl font-bold lg:text-white">Fruit
+        Burst</a>
+    </div>
+
+    <div class="grid grid-flow-col gap-4 text-white">
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </div>
 
   </footer>
 
